@@ -1,5 +1,4 @@
 const filter = require("./filter.js");
-const test = require("node:test");
 const assert = require("node:assert");
 
 test("filter must return an array with the same length", () => {

@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  node-test:
+    build: ./node-test
+    volumes:
+      - ./node-test:/app
+  tepi:
+    # image: denoland/deno
+    # working_dir: /app
+    # command: deno run --unstable --allow-read --allow-env --allow-net --allow-run https://tepi.deno.dev/src/cli.ts
+    # command: tepi --watch
+    build: ./tepi
+    volumes:
+      - ./tepi:/app

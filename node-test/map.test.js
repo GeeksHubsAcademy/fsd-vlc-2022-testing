@@ -1,5 +1,4 @@
 const map = require("./map.js");
-const test = require("node:test");
 const assert = require("node:assert");
 
 test("must be run with an array as first argument", () => {

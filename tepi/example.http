@@ -1,0 +1,33 @@
+POST https://faker.deno.dev/pong
+x-hola: mundo
+
+this body is a pong?
+
+
+HTTP/1.1 200 OK
+x-hola: mundo
+
+this body is a pong?
+
+###
+---
+redirect: manual
+---
+GET https://faker.deno.dev/image/avatar
+
+###
+---
+# display: full
+---
+
+GET https://jsonplaceholder.typicode.com/users/1
+
+
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+
+{
+    "id": 1,
+    "name": "Leanne Graham"
+}

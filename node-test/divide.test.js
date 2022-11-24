@@ -1,5 +1,5 @@
 const divide = require("./divide");
-const test = require("node:test");
+
 const assert = require("node:assert");
 var almostEqual = require("almost-equal");
 
@@ -12,7 +12,8 @@ test("1 divided by 3 is 0.3", () => {
 });
 
 test("1 divided by 0 is infinity", () => {
-  assert.equal(divide(1, 0), Infinity);
+  // assert.equal(divide(1, 0), Infinity);
+  expect(divide(1, 0)).toBe(Infinity);
 });
 
 test("not numbers in division", () => {

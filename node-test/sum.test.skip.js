@@ -1,5 +1,4 @@
 const sum = require("./sum.js");
-const test = require("node:test");
 const assert = require("node:assert");
 var almostEqual = require("almost-equal");
 
