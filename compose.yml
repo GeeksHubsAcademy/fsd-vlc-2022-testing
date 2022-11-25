@@ -9,7 +9,7 @@ services:
     # image: denoland/deno
     # working_dir: /app
     # command: deno run --unstable --allow-read --allow-env --allow-net --allow-run https://tepi.deno.dev/src/cli.ts
-    # command: tepi --watch
+    command: sleep 10 &&  tepi --watch
     build: ./tepi
     volumes:
       - ./tepi:/app
